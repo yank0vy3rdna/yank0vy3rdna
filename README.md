@@ -14,9 +14,11 @@
 
 ### TBank
 
-С ноября 2024 я разрабатываю host-based firewall - решение обеспечивающее безопасность кластера из десятков тысяч linux серверов ТБанка.
+С ноября 2024 я разрабатываю host-based firewall - решение, обеспечивающее безопасность кластера из десятков тысяч linux серверов ТБанка.
 
-Стек: golang, [eBPF](https://ebpf.io/), linux.
+Я строю интегрированный с смежными системами control-plane на основе k8s apiserver и controller-runtime для управления множеством агентов, которые при помощи eBPF фильтруют трафик на хостах на хостах.
+
+Стек: golang, k8s machinery, [eBPF](https://ebpf.io/), linux.
 
 ### YADRO Telecom
 
